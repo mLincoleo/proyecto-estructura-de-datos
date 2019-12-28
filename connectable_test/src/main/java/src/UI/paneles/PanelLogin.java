@@ -30,7 +30,7 @@ public class PanelLogin extends JPanel implements ActionListener {
         this.setLayout(new BorderLayout());
 
         this.panelFormulario = new PanelFormulario();
-        connectable = new Connectable();
+        connectable = new Connectable("127.0.0.1","TEST_DATABASE","shidopc","ragnarok8393007");
         this.ventanaPrincipal.setTitle(connectable.getLogInUser());
         this.botonConectar = new JButton("Conectar");
         this.botonRegistrar = new JButton("Registrar");
