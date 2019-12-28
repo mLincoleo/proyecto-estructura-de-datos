@@ -13,7 +13,7 @@ public class Connectable {
     private ResultSet queryResult;
     private String logInUser;
 
-    public Connectable(){
+    public Connectable(String IP,String databaseName,String username,String password){
         logInUser = "NoUser";
         try{
 
@@ -72,7 +72,7 @@ public class Connectable {
 
     private void attempToConnect() throws java.sql.SQLException,ClassNotFoundException{
         Class.forName("com.mysql.jdbc.Driver");
-        connection = DriverManager.getConnection("jdbc:mysql://127.0.0.1/TEST_DATABASE","shidopc","ragnarok8393007");
+        connection = DriverManager.getConnection("jdbc:mysql://"+IP+"/"+databasename,username,password);
     }
 
     private void createStatement() throws java.sql.SQLException{
