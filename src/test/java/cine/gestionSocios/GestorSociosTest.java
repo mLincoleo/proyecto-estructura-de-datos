@@ -5,6 +5,7 @@
  */
 package cine.gestionSocios;
 
+import gestionDatos.GestorSocios;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
