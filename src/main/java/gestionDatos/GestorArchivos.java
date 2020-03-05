@@ -13,6 +13,6 @@ import java.io.IOException;
  * @author maggi
  */
 public interface GestorArchivos {
-    public abstract void guardarDatos(Object objetoAGuardar,String ruta) throws IOException;
+    public abstract boolean guardarDatos(Object objetoAGuardar,String ruta) throws IOException;
     public abstract Object obtenerDatos(String ruta,String nombreArchivo) throws IOException,FileNotFoundException;
 }

@@ -20,10 +20,15 @@ public class GestorPeliculas implements GestorArchivos{
     
 
     @Override
-    public void guardarDatos(Object objetoAGuardar, String ruta) throws IOException {
+    public boolean guardarDatos(Object objetoAGuardar, String ruta) throws IOException {
         Pelicula pelicula = (Pelicula) objetoAGuardar;
         String fileName = pelicula.getTitulo() + pelicula.getId() + ".json";
-        objectMapper.writerWithDefaultPrettyPrinter().writeValue(new File(ruta + fileName), pelicula);
+        try{
+            objectMapper.writerWithDefaultPrettyPrinter().writeValue(new File(ruta + fileName), pelicula);
+        }catch(Exception e){
+            return false;
+        }
+        return true;
     }
 
     @Override
