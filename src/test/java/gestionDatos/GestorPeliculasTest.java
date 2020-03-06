@@ -9,6 +9,7 @@ import cine.peliculas.Categoria;
 import cine.peliculas.Pelicula;
 import cine.peliculas.Pg;
 import java.io.IOException;
+import java.util.UUID;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
@@ -28,7 +29,7 @@ public class GestorPeliculasTest {
     @Test
     public void testGuardarPelicula() {
         try {
-            Pelicula p = new Pelicula("titulo", "director", Categoria.ROMANCE, Pg.TODO_PUBLICO, 0);
+            Pelicula p = new Pelicula("titulo", "director", Categoria.ROMANCE, Pg.TODO_PUBLICO, UUID.randomUUID(),null);
             assertTrue(gestorPeliculas.guardarDatos(p, ruta));
             
         } catch (IOException e) {

@@ -5,6 +5,9 @@
  */
 package cine.peliculas;
 
+import cine.salas.Sala;
+import java.util.UUID;
+
 /**
  *
  * @author maggi
@@ -15,21 +18,26 @@ public class Pelicula {
     private String director;
     private Categoria categoria;
     private Pg pg;
-    private int id;
-
-    public Pelicula(String titulo, String director, Categoria categoria, Pg pg, int id) {
+    //vamos a trabajar con UUID
+    private UUID id;
+    private Sala sala; 
+    
+    public Pelicula(String titulo, String director, Categoria categoria, Pg pg, UUID id, Sala sala) {
         this.titulo = titulo;
         this.director = director;
         this.categoria = categoria;
         this.pg = pg;
+        //UUID
         this.id = id;
+        //la pelicula debe contener una sala, y dicha sala debe contener esta pelicula
+        this.sala = sala;
     }
 
     public Pelicula() {
 
     }
 
-    public int getId() {
+    public UUID getId() {
         return id;
     }
 
@@ -51,7 +59,7 @@ public class Pelicula {
 
     @Override
     public String toString() {
-        return "Pelicula{" + "titulo=" + titulo + ", director=" + director + ", categoria=" + categoria + ", pg=" + pg + ", id=" + id + '}';
+        return "Pelicula{" + "titulo=" + titulo + ", director=" + director + ", categoria=" + categoria + ", pg=" + pg + ", id=" + id.toString() + '}';
     }
 
 }

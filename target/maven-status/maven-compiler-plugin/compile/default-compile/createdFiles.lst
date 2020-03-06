@@ -1,0 +1,8 @@
+app\App.class
+cine\peliculas\Pelicula.class
+cine\peliculas\Categoria.class
+logica\Node.class
+cine\Cine.class
+cine\peliculas\Pg.class
+logica\Arbol.class
+clientes\Cliente.class
