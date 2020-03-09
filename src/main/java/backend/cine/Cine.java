@@ -1,5 +1,5 @@
 
-package cine;
+package backend.cine;
 
 public class Cine {
     

@@ -3,12 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package logica;
+package backend.cine.peliculas;
 
-import cine.peliculas.Categoria;
-import cine.peliculas.Pelicula;
-import cine.peliculas.Pg;
+import backend.cine.peliculas.Categoria;
+import backend.cine.peliculas.Pelicula;
+import backend.cine.peliculas.Pg;
 import java.util.UUID;
+import backend.arbol.Arbol;
 
 /**
  *

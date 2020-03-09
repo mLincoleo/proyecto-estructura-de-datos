@@ -3,13 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package clientes;
+package backend.cine.peliculas;
 
 /**
  *
  * @author maggi
  */
-public interface Validable {
-    public abstract boolean validarFechaNacimiento(String fechaNacimiento);
-    
+public enum Pg {
+    TODO_PUBLICO,MAYORES_12,MAYORES_16,MAYORES_18;
 }

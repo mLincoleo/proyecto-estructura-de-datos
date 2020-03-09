@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package cine.peliculas;
+package backend.cine.peliculas;
 
-import cine.salas.Sala;
+import backend.cine.salas.Sala;
 import java.util.UUID;
 
 /**

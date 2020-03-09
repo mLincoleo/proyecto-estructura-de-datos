@@ -1,7 +1,7 @@
 
-package gestionDatos;
+package backend.gestion_datos;
 
-import cine.peliculas.Pelicula;
+import backend.cine.peliculas.Pelicula;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.gson.Gson;
 import java.io.File;

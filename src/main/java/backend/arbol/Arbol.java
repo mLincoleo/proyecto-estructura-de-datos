@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package logica;
+package backend.arbol;
 
-import cine.peliculas.Pelicula;
+import backend.cine.peliculas.Pelicula;
 import java.util.UUID;
 
 /**

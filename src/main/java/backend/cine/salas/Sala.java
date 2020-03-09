@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package cine.salas;
+package backend.cine.salas;
 
-import cine.peliculas.Pelicula;
+import backend.cine.peliculas.Pelicula;
 
 /**
  *

@@ -2,13 +2,13 @@ package app;
 
 
 
-import cine.peliculas.Categoria;
-import cine.peliculas.Pelicula;
-import cine.peliculas.Pg;
-import gestionDatos.GestorPeliculas;
+import backend.cine.peliculas.Categoria;
+import backend.cine.peliculas.Pelicula;
+import backend.cine.peliculas.Pg;
+import backend.gestion_datos.GestorPeliculas;
 import java.io.IOException;
 import java.util.UUID;
-import logica.Arbol;
+import backend.arbol.Arbol;
 
 public class App {
 

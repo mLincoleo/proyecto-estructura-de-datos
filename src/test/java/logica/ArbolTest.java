@@ -5,9 +5,10 @@
  */
 package logica;
 
-import static cine.peliculas.Categoria.*;
-import cine.peliculas.Pelicula;
-import static cine.peliculas.Pg.MAYORES_18;
+import backend.arbol.Arbol;
+import static backend.cine.peliculas.Categoria.*;
+import backend.cine.peliculas.Pelicula;
+import static backend.cine.peliculas.Pg.MAYORES_18;
 import java.util.UUID;
 import org.junit.After;
 import org.junit.AfterClass;

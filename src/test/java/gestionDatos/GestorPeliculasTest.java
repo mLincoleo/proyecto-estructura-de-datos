@@ -5,9 +5,10 @@
  */
 package gestionDatos;
 
-import cine.peliculas.Categoria;
-import cine.peliculas.Pelicula;
-import cine.peliculas.Pg;
+import backend.gestion_datos.GestorPeliculas;
+import backend.cine.peliculas.Categoria;
+import backend.cine.peliculas.Pelicula;
+import backend.cine.peliculas.Pg;
 import java.io.IOException;
 import java.util.UUID;
 import org.junit.Test;

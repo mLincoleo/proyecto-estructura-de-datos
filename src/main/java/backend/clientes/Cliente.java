@@ -1,4 +1,4 @@
-package clientes;
+package backend.clientes;
 
 public class Cliente{
     
