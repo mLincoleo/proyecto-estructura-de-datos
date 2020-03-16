@@ -1,4 +1,3 @@
-
 package backend.gestion_datos;
 
 import backend.cine.peliculas.Categoria;
@@ -14,35 +13,44 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.UUID;
 
-public class GestorPeliculas implements GestorArchivos{
-    
-    private final ObjectMapper objectMapper;
-    
-    public GestorPeliculas(){
-        objectMapper = new ObjectMapper();
-    }
-    
-    
-    
+public class GestorPeliculas {
 
-    @Override
-    public boolean guardarDatos(Object objetoAGuardar, String ruta) throws IOException {
-        Pelicula pelicula = (Pelicula) objetoAGuardar;
-        List<Pelicula> peliculas = new ArrayList<>();
-        peliculas.add(pelicula);
-        peliculas.add(new Pelicula("titulo2", "direcctor2", Categoria.DRAMA, Pg.MAYORES_12, UUID.randomUUID()));
-        peliculas.add(pelicula);
-        try{
-            objectMapper.writerWithDefaultPrettyPrinter().writeValue(new File(ruta), peliculas);
-        }catch(Exception e){
+    private final ObjectMapper objectMapper;
+    private final List<Pelicula> peliculas = new ArrayList<>();
+    private final String rutaPeliculas = "cine\\peliculas\\peliculas.json";
+
+    public GestorPeliculas() throws IOException {
+        objectMapper = new ObjectMapper();
+        try {
+            objectMapper.readValue(new File(rutaPeliculas), Pelicula[].class);
+            System.out.println("PELICULAS ENCONTRADAS");
+        } catch (FileNotFoundException ex) {
+            System.out.println("CREANDO PELICULAS");
+            initialSetup();
+            guardarPeliculas();
+        }
+
+    }
+
+    private void initialSetup() {
+        peliculas.add(new Pelicula("titulo1", "direcctor1", Categoria.ACCION, Pg.MAYORES_12, UUID.randomUUID()));
+        peliculas.add(new Pelicula("titulo2", "direcctor2", Categoria.COMEDIA, Pg.MAYORES_16, UUID.randomUUID()));
+        peliculas.add(new Pelicula("titulo3", "direcctor3", Categoria.DRAMA, Pg.MAYORES_18, UUID.randomUUID()));
+        peliculas.add(new Pelicula("titulo4", "direcctor4", Categoria.ROMANCE, Pg.TODO_PUBLICO, UUID.randomUUID()));
+        peliculas.add(new Pelicula("titulo5", "direcctor5", Categoria.SUSPENSO, Pg.MAYORES_12, UUID.randomUUID()));
+    }
+
+    private boolean guardarPeliculas() throws IOException {
+        try {
+            objectMapper.writerWithDefaultPrettyPrinter().writeValue(new File(rutaPeliculas), peliculas);
+        } catch (Exception e) {
             return false;
         }
         return true;
     }
 
-    
-    public List<Pelicula> obtenerDatos(String ruta) throws IOException, FileNotFoundException {
+    public List<Pelicula> obtenerPeliculas(String ruta) throws IOException, FileNotFoundException {
         return Arrays.asList(objectMapper.readValue(new File(ruta), Pelicula[].class));
     }
-    
+
 }

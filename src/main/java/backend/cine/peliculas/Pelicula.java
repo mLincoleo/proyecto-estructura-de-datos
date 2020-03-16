@@ -32,6 +32,11 @@ public class Pelicula {
     
     public Pelicula(){
         //para que funcione la lectura de archivos
+        //NO BORRAR
+    }
+    
+    public void doABarrelRoll(){
+        System.out.println(UUID.randomUUID().toString());
     }
 
 
