@@ -61,7 +61,7 @@ public class Arbol {
 
     }
 
-    private Node deleteRecursive(Node current, UUID id) {
+    private Node deleteRecursive(Node current, String id) {
         if (current == null) {
             return null;
         }
@@ -90,12 +90,12 @@ public class Arbol {
     }
 
     //buscar parte 1 (este se usa)
-    public Pelicula obtenerNode(UUID id) {
+    public Pelicula obtenerNode(String id) {
         return containsNodeRecursive(root, id);
     }
 //buscar parte 2 
 
-    private Pelicula containsNodeRecursive(Node nodoActual, UUID id) {
+    private Pelicula containsNodeRecursive(Node nodoActual, String id) {
         if (nodoActual == null) {
             return null;
         }

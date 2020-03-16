@@ -25,14 +25,14 @@ public class ManejoDePeliculas {
     }
 
     public Pelicula obtenerPeliculaPorId(UUID id) {
-        return arbol.obtenerNode(id);
+        return arbol.obtenerNode(id.toString());
     }
     
     public void  añadirPelicula (String titulo, String director, Categoria categoria, Pg pg){
         
-        Pelicula pelicula = new Pelicula( titulo,  director,  categoria,  pg, UUID.randomUUID(),null);
+      // Pelicula pelicula = new Pelicula( titulo,  director,  categoria,  pg, UUID.randomUUID(),null);
         
-        arbol.add(pelicula);
+        //arbol.add(pelicula);
         
     }
 

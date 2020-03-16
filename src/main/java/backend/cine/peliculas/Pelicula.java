@@ -16,28 +16,26 @@ public class Pelicula {
 
     private String titulo;
     private String director;
-    private Categoria categoria;
-    private Pg pg;
-    //vamos a trabajar con UUID
-    private UUID id;
+    private String categoria;
+    private String pg;
+    private String id;
     private Sala sala; 
     
-    public Pelicula(String titulo, String director, Categoria categoria, Pg pg, UUID id, Sala sala) {
+    public Pelicula(String titulo, String director, Categoria categoria, Pg pg, UUID id) {
         this.titulo = titulo;
         this.director = director;
-        this.categoria = categoria;
-        this.pg = pg;
+        this.categoria = categoria.name();
+        this.pg = pg.name();
         //UUID
-        this.id = id;
-        //la pelicula debe contener una sala, y dicha sala debe contener esta pelicula
-        this.sala = sala;
+        this.id = id.toString();
+    }
+    
+    public Pelicula(){
+        //para que funcione la lectura de archivos
     }
 
-    public Pelicula() {
 
-    }
-
-    public UUID getId() {
+    public String getId() {
         return id;
     }
 
@@ -49,11 +47,11 @@ public class Pelicula {
         return director;
     }
 
-    public Categoria getCategoria() {
+    public String getCategoria() {
         return categoria;
     }
 
-    public Pg getPg() {
+    public String getPg() {
         return pg;
     }
 

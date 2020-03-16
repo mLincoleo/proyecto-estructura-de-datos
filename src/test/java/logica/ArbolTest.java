@@ -45,7 +45,7 @@ public class ArbolTest {
         arboltest = new Arbol();
         //tring titulo, String director, Categoria categoria, Pg pg, UUID id
         id =UUID.randomUUID();
-        arboltest.add(new Pelicula("ass","assman",TERROR,MAYORES_18,id,null));
+        arboltest.add(new Pelicula("ass","assman",TERROR,MAYORES_18,id));
         
     }
     
@@ -75,7 +75,7 @@ public class ArbolTest {
         
         
         
-        Assert.assertNotNull(arboltest.obtenerNode(id));
+        Assert.assertNotNull(arboltest.obtenerNode(id.toString()));
     }
     
 }

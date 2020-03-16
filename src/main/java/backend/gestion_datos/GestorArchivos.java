@@ -14,5 +14,4 @@ import java.io.IOException;
  */
 public interface GestorArchivos {
     public abstract boolean guardarDatos(Object objetoAGuardar,String ruta) throws IOException;
-    public abstract Object obtenerDatos(String ruta,String nombreArchivo) throws IOException,FileNotFoundException;
 }

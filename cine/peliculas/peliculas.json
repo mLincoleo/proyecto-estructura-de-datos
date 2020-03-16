@@ -1,0 +1,19 @@
+[ {
+  "titulo" : "titulo",
+  "director" : "director",
+  "categoria" : "COMEDIA",
+  "pg" : "MAYORES_12",
+  "id" : "db4830e7-e5e1-48fb-a0ab-c922d34f9e72"
+}, {
+  "titulo" : "titulo2",
+  "director" : "direcctor2",
+  "categoria" : "DRAMA",
+  "pg" : "MAYORES_12",
+  "id" : "671b0f06-bd20-40e0-9873-a9590e81eef7"
+}, {
+  "titulo" : "titulo",
+  "director" : "director",
+  "categoria" : "COMEDIA",
+  "pg" : "MAYORES_12",
+  "id" : "db4830e7-e5e1-48fb-a0ab-c922d34f9e72"
+} ]

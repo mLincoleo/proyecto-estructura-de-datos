@@ -29,5 +29,7 @@ public class GestorSocios implements Validable{
         return true;
     }
     
+    
+    
 
 }

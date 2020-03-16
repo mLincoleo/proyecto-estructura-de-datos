@@ -21,7 +21,7 @@ import static org.junit.Assert.*;
 public class GestorPeliculasTest {
 
     private GestorPeliculas gestorPeliculas = new GestorPeliculas();
-    private String ruta = "C:\\Users\\maggi\\Documents\\NetBeansProjects\\Proyecto_Estructura_Datos\\src\\data\\pelicula\\";
+    private String ruta = "cine\\peliculas";
 
     public GestorPeliculasTest() {
         gestorPeliculas = new GestorPeliculas();
@@ -30,8 +30,8 @@ public class GestorPeliculasTest {
     @Test
     public void testGuardarPelicula() {
         try {
-            Pelicula p = new Pelicula("titulo", "director", Categoria.ROMANCE, Pg.TODO_PUBLICO, UUID.randomUUID(),null);
-            assertTrue(gestorPeliculas.guardarDatos(p, ruta));
+            Pelicula p = new Pelicula("titulo", "director", Categoria.ROMANCE, Pg.TODO_PUBLICO, UUID.randomUUID());
+            assertTrue(gestorPeliculas.guardarDatos(p, ruta + "peliculas.json"));
             
         } catch (IOException e) {
             e.printStackTrace();
@@ -41,7 +41,7 @@ public class GestorPeliculasTest {
     @Test
     public void testObtenerPelicula(){
         try{
-            Pelicula p = (Pelicula)gestorPeliculas.obtenerDatos(ruta, "titulo0");
+            Pelicula p = (Pelicula)gestorPeliculas.obtenerDatos(ruta + "peliculas.json");
             assertNotNull(p);
             p.toString();
             
