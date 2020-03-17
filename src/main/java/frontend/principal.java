@@ -9,7 +9,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
-
+import backend.gestion_datos.GestorPeliculas;
 /**
  *
  * @author USUARIO ASUS
@@ -108,8 +108,13 @@ public class principal extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButtonLimpiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonLimpiarActionPerformed
-//            JSon.crearSala("Spiderman");
+        try {
+            GestorPeliculas gp = new GestorPeliculas();
+            gp.limpiar();
             JOptionPane.showMessageDialog(null,"SE HAN DESOCUPADO TODAS LAS BUTACAS");
+        } catch (IOException ex) {
+            Logger.getLogger(principal.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_jButtonLimpiarActionPerformed
 
     /**

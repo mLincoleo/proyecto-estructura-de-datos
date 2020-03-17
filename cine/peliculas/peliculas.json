@@ -1,1 +1,371 @@
-[ ]
+[ {
+  "titulo" : "titulo1",
+  "director" : "direcctor1",
+  "categoria" : "ACCION",
+  "pg" : "MAYORES_12",
+  "id" : "6421143d-44aa-4f30-aaee-53254e6d3a97",
+  "sala" : {
+    "asientos" : {
+      "root" : {
+        "id" : 1,
+        "bd" : true,
+        "leftChild" : null,
+        "rightChild" : {
+          "id" : 2,
+          "bd" : true,
+          "leftChild" : null,
+          "rightChild" : {
+            "id" : 3,
+            "bd" : true,
+            "leftChild" : null,
+            "rightChild" : {
+              "id" : 4,
+              "bd" : true,
+              "leftChild" : null,
+              "rightChild" : {
+                "id" : 5,
+                "bd" : true,
+                "leftChild" : null,
+                "rightChild" : {
+                  "id" : 6,
+                  "bd" : true,
+                  "leftChild" : null,
+                  "rightChild" : {
+                    "id" : 7,
+                    "bd" : true,
+                    "leftChild" : null,
+                    "rightChild" : {
+                      "id" : 8,
+                      "bd" : true,
+                      "leftChild" : null,
+                      "rightChild" : {
+                        "id" : 9,
+                        "bd" : true,
+                        "leftChild" : null,
+                        "rightChild" : {
+                          "id" : 10,
+                          "bd" : true,
+                          "leftChild" : null,
+                          "rightChild" : {
+                            "id" : 11,
+                            "bd" : true,
+                            "leftChild" : null,
+                            "rightChild" : {
+                              "id" : 12,
+                              "bd" : true,
+                              "leftChild" : null,
+                              "rightChild" : null
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "butaca" : 1,
+    "pelicula" : null
+  },
+  "foto" : null
+}, {
+  "titulo" : "titulo2",
+  "director" : "direcctor2",
+  "categoria" : "COMEDIA",
+  "pg" : "MAYORES_16",
+  "id" : "ba66bd0b-bb14-4a3a-90d6-92767742bd68",
+  "sala" : {
+    "asientos" : {
+      "root" : {
+        "id" : 1,
+        "bd" : true,
+        "leftChild" : null,
+        "rightChild" : {
+          "id" : 2,
+          "bd" : true,
+          "leftChild" : null,
+          "rightChild" : {
+            "id" : 3,
+            "bd" : true,
+            "leftChild" : null,
+            "rightChild" : {
+              "id" : 4,
+              "bd" : true,
+              "leftChild" : null,
+              "rightChild" : {
+                "id" : 5,
+                "bd" : true,
+                "leftChild" : null,
+                "rightChild" : {
+                  "id" : 6,
+                  "bd" : true,
+                  "leftChild" : null,
+                  "rightChild" : {
+                    "id" : 7,
+                    "bd" : true,
+                    "leftChild" : null,
+                    "rightChild" : {
+                      "id" : 8,
+                      "bd" : true,
+                      "leftChild" : null,
+                      "rightChild" : {
+                        "id" : 9,
+                        "bd" : true,
+                        "leftChild" : null,
+                        "rightChild" : {
+                          "id" : 10,
+                          "bd" : true,
+                          "leftChild" : null,
+                          "rightChild" : {
+                            "id" : 11,
+                            "bd" : true,
+                            "leftChild" : null,
+                            "rightChild" : {
+                              "id" : 12,
+                              "bd" : true,
+                              "leftChild" : null,
+                              "rightChild" : null
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "butaca" : 1,
+    "pelicula" : null
+  },
+  "foto" : null
+}, {
+  "titulo" : "titulo3",
+  "director" : "direcctor3",
+  "categoria" : "DRAMA",
+  "pg" : "MAYORES_18",
+  "id" : "8a845a87-e381-4f84-a82e-419ca8289a8e",
+  "sala" : {
+    "asientos" : {
+      "root" : {
+        "id" : 1,
+        "bd" : true,
+        "leftChild" : null,
+        "rightChild" : {
+          "id" : 2,
+          "bd" : true,
+          "leftChild" : null,
+          "rightChild" : {
+            "id" : 3,
+            "bd" : true,
+            "leftChild" : null,
+            "rightChild" : {
+              "id" : 4,
+              "bd" : true,
+              "leftChild" : null,
+              "rightChild" : {
+                "id" : 5,
+                "bd" : true,
+                "leftChild" : null,
+                "rightChild" : {
+                  "id" : 6,
+                  "bd" : true,
+                  "leftChild" : null,
+                  "rightChild" : {
+                    "id" : 7,
+                    "bd" : true,
+                    "leftChild" : null,
+                    "rightChild" : {
+                      "id" : 8,
+                      "bd" : true,
+                      "leftChild" : null,
+                      "rightChild" : {
+                        "id" : 9,
+                        "bd" : true,
+                        "leftChild" : null,
+                        "rightChild" : {
+                          "id" : 10,
+                          "bd" : true,
+                          "leftChild" : null,
+                          "rightChild" : {
+                            "id" : 11,
+                            "bd" : true,
+                            "leftChild" : null,
+                            "rightChild" : {
+                              "id" : 12,
+                              "bd" : true,
+                              "leftChild" : null,
+                              "rightChild" : null
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "butaca" : 1,
+    "pelicula" : null
+  },
+  "foto" : null
+}, {
+  "titulo" : "titulo4",
+  "director" : "direcctor4",
+  "categoria" : "ROMANCE",
+  "pg" : "TODO_PUBLICO",
+  "id" : "4cd96cdd-26dd-4272-86cc-cd47e08530d2",
+  "sala" : {
+    "asientos" : {
+      "root" : {
+        "id" : 1,
+        "bd" : true,
+        "leftChild" : null,
+        "rightChild" : {
+          "id" : 2,
+          "bd" : true,
+          "leftChild" : null,
+          "rightChild" : {
+            "id" : 3,
+            "bd" : true,
+            "leftChild" : null,
+            "rightChild" : {
+              "id" : 4,
+              "bd" : true,
+              "leftChild" : null,
+              "rightChild" : {
+                "id" : 5,
+                "bd" : true,
+                "leftChild" : null,
+                "rightChild" : {
+                  "id" : 6,
+                  "bd" : true,
+                  "leftChild" : null,
+                  "rightChild" : {
+                    "id" : 7,
+                    "bd" : true,
+                    "leftChild" : null,
+                    "rightChild" : {
+                      "id" : 8,
+                      "bd" : true,
+                      "leftChild" : null,
+                      "rightChild" : {
+                        "id" : 9,
+                        "bd" : true,
+                        "leftChild" : null,
+                        "rightChild" : {
+                          "id" : 10,
+                          "bd" : true,
+                          "leftChild" : null,
+                          "rightChild" : {
+                            "id" : 11,
+                            "bd" : true,
+                            "leftChild" : null,
+                            "rightChild" : {
+                              "id" : 12,
+                              "bd" : true,
+                              "leftChild" : null,
+                              "rightChild" : null
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "butaca" : 1,
+    "pelicula" : null
+  },
+  "foto" : null
+}, {
+  "titulo" : "titulo5",
+  "director" : "direcctor5",
+  "categoria" : "SUSPENSO",
+  "pg" : "MAYORES_12",
+  "id" : "406d9484-0a80-4ca2-80c9-2ff2e300e640",
+  "sala" : {
+    "asientos" : {
+      "root" : {
+        "id" : 1,
+        "bd" : true,
+        "leftChild" : null,
+        "rightChild" : {
+          "id" : 2,
+          "bd" : true,
+          "leftChild" : null,
+          "rightChild" : {
+            "id" : 3,
+            "bd" : true,
+            "leftChild" : null,
+            "rightChild" : {
+              "id" : 4,
+              "bd" : true,
+              "leftChild" : null,
+              "rightChild" : {
+                "id" : 5,
+                "bd" : true,
+                "leftChild" : null,
+                "rightChild" : {
+                  "id" : 6,
+                  "bd" : true,
+                  "leftChild" : null,
+                  "rightChild" : {
+                    "id" : 7,
+                    "bd" : true,
+                    "leftChild" : null,
+                    "rightChild" : {
+                      "id" : 8,
+                      "bd" : true,
+                      "leftChild" : null,
+                      "rightChild" : {
+                        "id" : 9,
+                        "bd" : true,
+                        "leftChild" : null,
+                        "rightChild" : {
+                          "id" : 10,
+                          "bd" : true,
+                          "leftChild" : null,
+                          "rightChild" : {
+                            "id" : 11,
+                            "bd" : true,
+                            "leftChild" : null,
+                            "rightChild" : {
+                              "id" : 12,
+                              "bd" : true,
+                              "leftChild" : null,
+                              "rightChild" : null
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "butaca" : 1,
+    "pelicula" : null
+  },
+  "foto" : null
+} ]

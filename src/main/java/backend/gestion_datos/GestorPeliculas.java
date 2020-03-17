@@ -16,10 +16,11 @@ import java.util.UUID;
 public class GestorPeliculas {
 
     private final ObjectMapper objectMapper;
-    private final List<Pelicula> peliculas = new ArrayList<>();
+    private List<Pelicula> peliculas;
     private final String rutaPeliculas = "cine\\peliculas\\peliculas.json";
 
     public GestorPeliculas() throws IOException {
+        peliculas =  new ArrayList<>();
         objectMapper = new ObjectMapper();
         try {
             objectMapper.readValue(new File(rutaPeliculas), Pelicula[].class);
@@ -30,6 +31,11 @@ public class GestorPeliculas {
             guardarPeliculas();
         }
 
+    }
+    
+    public void limpiar() throws IOException{
+        initialSetup();
+        guardarPeliculas();
     }
 
     private void initialSetup() {
@@ -57,4 +63,8 @@ public class GestorPeliculas {
         return Arrays.asList(objectMapper.readValue(new File(rutaPeliculas), Pelicula[].class));
     }
 
+    public void setPeliculas(List<Pelicula> pelis) {
+        this.peliculas=pelis;
+    }
+    
 }

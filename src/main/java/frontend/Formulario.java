@@ -35,12 +35,7 @@ public class Formulario extends javax.swing.JFrame {
             jTextField1.setEditable(false);
             this.setLocationRelativeTo(null);
             gp = new GestorPeliculas();
-            peliculas = gp.obtenerPeliculas();
-            index = peliculas.indexOf(peli);
-            System.out.println(peliculas);
-            System.out.println(peli);
-            System.out.println(index);
-            
+            peliculas = gp.obtenerPeliculas();       
     }
 
     /**
@@ -135,11 +130,9 @@ public class Formulario extends javax.swing.JFrame {
         telefono = jTextTel.getText();
         JOptionPane.showMessageDialog(null,"COMPRADO: BUTACA "+butaca+"\nNOMBRE: "+nombre+"\nTELÉFONO: "+telefono);
         try {   
-                System.out.println(peliculas);
-                System.out.println(peli);
-                System.out.println(index);
                 peli.getSala().getAsientos().ocupar(butaca);
                 this.setVisible(false);
+                gp.setPeliculas(peliculas);
                 gp.guardarPeliculas();
                 SalaCine sc = new SalaCine(peli);
                 sc.setVisible(true);
