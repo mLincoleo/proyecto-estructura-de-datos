@@ -5,6 +5,7 @@
  */
 package backend.cine.salas;
 
+import backend.arbol.Tree;
 import backend.cine.peliculas.Pelicula;
 
 /**
@@ -15,24 +16,30 @@ public class Sala {
     
     
     //cada asiento es un boolean: false = vacio; true = reservado
-    private boolean[][] asientos=new boolean[5][20];
-    private int numeroSala;
+    private Tree asientos;
+    private int butaca;
     //debe contener pelicula, pero dicha pelicula debe contener esta sala
     private Pelicula pelicula;
     
-    
+    public Sala(){
+        butaca = 1;
+        asientos = new Tree();
+        for(int i=1;i<=12;i++){
+               asientos.insert(i, true);
+           }
+    }
    
 
-    public boolean[][] getAsientos() {
+    public Tree getAsientos() {
         return asientos;
     }
 
-    public void setAsientos(boolean[][] asientos) {
+    public void setAsientos(Tree asientos) {
         this.asientos = asientos;
     }
 
-    public int getNumeSala() {
-        return numeroSala;
+    public int getButaca() {
+        return butaca;
     }
 
     public Pelicula getPelicula() {
@@ -42,26 +49,5 @@ public class Sala {
     public void setPelicula(Pelicula pelicula) {
         this.pelicula = pelicula;
     }
-    
-    
-
-    public void setNumeSala(int numeroSala) {
-        this.numeroSala = numeroSala;
-    }
-
-    public Sala( int numeroSala) {
-        SetAsientosVacios();
-        this.numeroSala = numeroSala;
-    }
-    
-    private void SetAsientosVacios(){
-        for (int i = 0; i < 5; i++) {
-            for (int j = 0; j < 20; j++) {
-                this.asientos[i][j]=false;
-            }
-        }
-        
-    }
-    
     
 }

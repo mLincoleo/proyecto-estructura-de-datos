@@ -40,7 +40,7 @@ public class GestorPeliculas {
         peliculas.add(new Pelicula("titulo5", "direcctor5", Categoria.SUSPENSO, Pg.MAYORES_12, UUID.randomUUID()));
     }
 
-    private boolean guardarPeliculas() throws IOException {
+    public boolean guardarPeliculas() throws IOException {
         try {
             objectMapper.writerWithDefaultPrettyPrinter().writeValue(new File(rutaPeliculas), peliculas);
         } catch (Exception e) {
@@ -51,6 +51,10 @@ public class GestorPeliculas {
 
     public List<Pelicula> obtenerPeliculas(String ruta) throws IOException, FileNotFoundException {
         return Arrays.asList(objectMapper.readValue(new File(ruta), Pelicula[].class));
+    }
+    
+    public List<Pelicula> obtenerPeliculas() throws IOException, FileNotFoundException {
+        return Arrays.asList(objectMapper.readValue(new File(rutaPeliculas), Pelicula[].class));
     }
 
 }

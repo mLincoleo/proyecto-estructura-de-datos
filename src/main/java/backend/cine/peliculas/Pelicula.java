@@ -5,7 +5,10 @@
  */
 package backend.cine.peliculas;
 
+import backend.arbol.Tree;
 import backend.cine.salas.Sala;
+import java.io.File;
+import java.util.Objects;
 import java.util.UUID;
 
 /**
@@ -19,7 +22,20 @@ public class Pelicula {
     private String categoria;
     private String pg;
     private String id;
-    private Sala sala; 
+    private Sala sala;
+    private File foto;
+    
+    public Pelicula(String titulo, String director, Categoria categoria, Pg pg, UUID id, File img) {
+        this.titulo = titulo;
+        this.director = director;
+        this.categoria = categoria.name();
+        this.pg = pg.name();
+        //UUID
+        this.id = id.toString();
+        this.foto=img;
+        sala = new Sala();
+    }
+    
     
     public Pelicula(String titulo, String director, Categoria categoria, Pg pg, UUID id) {
         this.titulo = titulo;
@@ -28,7 +44,29 @@ public class Pelicula {
         this.pg = pg.name();
         //UUID
         this.id = id.toString();
+        this.foto=null;
+        sala = new Sala();
     }
+
+    public Sala getSala() {
+        return sala;
+    }
+
+    public void setSala(Sala sala) {
+        this.sala = sala;
+    }
+
+    
+    
+    public File getFoto() {
+        return foto;
+    }
+
+    public void setFoto(File foto) {
+        this.foto = foto;
+    }
+    
+    
     
     public Pelicula(){
         //para que funcione la lectura de archivos
@@ -65,4 +103,45 @@ public class Pelicula {
         return "Pelicula{" + "titulo=" + titulo + ", director=" + director + ", categoria=" + categoria + ", pg=" + pg + ", id=" + id.toString() + '}';
     }
 
+    @Override
+    public int hashCode() {
+        int hash = 7;
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Pelicula other = (Pelicula) obj;
+        if (!Objects.equals(this.titulo, other.titulo)) {
+            return false;
+        }
+        if (!Objects.equals(this.director, other.director)) {
+            return false;
+        }
+        if (!Objects.equals(this.categoria, other.categoria)) {
+            return false;
+        }
+        if (!Objects.equals(this.pg, other.pg)) {
+            return false;
+        }
+        if (!Objects.equals(this.id, other.id)) {
+            return false;
+        }
+        if (!Objects.equals(this.foto, other.foto)) {
+            return false;
+        }
+        return true;
+    }
+
+    
+    
 }
