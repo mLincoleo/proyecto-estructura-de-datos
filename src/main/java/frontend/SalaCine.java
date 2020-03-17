@@ -18,11 +18,24 @@ import java.util.logging.Logger;
  */
 public class SalaCine extends javax.swing.JFrame {
 
-    private int butaca;
+    private int butaca, anterior;
     private Pelicula peli;
     
     public SalaCine(Pelicula pelicula) throws IOException {
-        
+        anterior=0;
+        butaca = 0;
+        peli = pelicula;
+        this.setUndecorated(true);
+        initComponents();
+        jButton2.setEnabled(false);
+        this.setLocationRelativeTo(null);
+        jTextField1.setEditable(false);
+        Sala disp = peli.getSala();
+        this.comprobarAsientos(disp);
+    }
+    
+    public SalaCine(Pelicula pelicula, int previous) throws IOException {
+        anterior=previous;
         butaca = 0;
         peli = pelicula;
         this.setUndecorated(true);
@@ -389,7 +402,7 @@ public class SalaCine extends javax.swing.JFrame {
         this.setVisible(false);
         Catalogo cat;
         try {
-            cat = new Catalogo();
+            cat = new Catalogo(anterior);
             cat.setVisible(true);
         } catch (IOException ex) {
             Logger.getLogger(SalaCine.class.getName()).log(Level.SEVERE, null, ex);
@@ -400,7 +413,7 @@ public class SalaCine extends javax.swing.JFrame {
         this.setVisible(false);
         Formulario form;
         try {
-            form = new Formulario(butaca, peli);
+            form = new Formulario(butaca, peli, anterior);
             form.setVisible(true);
         } catch (IOException ex) {
             Logger.getLogger(SalaCine.class.getName()).log(Level.SEVERE, null, ex);

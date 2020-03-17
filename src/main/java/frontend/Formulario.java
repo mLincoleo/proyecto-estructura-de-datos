@@ -21,13 +21,26 @@ import backend.gestion_datos.GestorPeliculas;
  */
 public class Formulario extends javax.swing.JFrame {
 
-    private int butaca, index;
+    private int butaca, index, anterior;
     private String nombre, telefono;
     private Pelicula peli;
     private List<Pelicula> peliculas;
     private GestorPeliculas gp;
     
     public Formulario(int but, Pelicula pelicula) throws IOException {
+            this.peli = pelicula;
+            this.butaca=but;
+            initComponents();
+            jTextField1.setText("HAS SELECCIONADO LA BUTACA "+ butaca+"\n");
+            jTextField1.setEditable(false);
+            this.setLocationRelativeTo(null);
+            gp = new GestorPeliculas();
+            peliculas = gp.obtenerPeliculas();
+            index=peliculas.indexOf(pelicula);
+    }
+    
+    public Formulario(int but, Pelicula pelicula, int previous) throws IOException {
+            anterior = previous;
             this.peli = pelicula;
             this.butaca=but;
             initComponents();
@@ -136,7 +149,7 @@ public class Formulario extends javax.swing.JFrame {
                 peliculas.set(index, peli);
                 gp.setPeliculas(peliculas);
                 gp.guardarPeliculas();
-                SalaCine sc = new SalaCine(peli);
+                SalaCine sc = new SalaCine(peli, anterior);
                 sc.setVisible(true);
                 
             } catch (IOException ex) {
@@ -148,7 +161,7 @@ public class Formulario extends javax.swing.JFrame {
     private void jButtonVolverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonVolverActionPerformed
         try {
             this.setVisible(false);
-            SalaCine sc = new SalaCine(peli);
+            SalaCine sc = new SalaCine(peli, anterior);
             sc.setVisible(true);
         } catch (IOException ex) {
             Logger.getLogger(Formulario.class.getName()).log(Level.SEVERE, null, ex);

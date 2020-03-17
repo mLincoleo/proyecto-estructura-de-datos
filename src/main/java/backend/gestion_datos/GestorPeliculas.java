@@ -39,11 +39,17 @@ public class GestorPeliculas {
     }
 
     private void initialSetup() {
-        peliculas.add(new Pelicula("titulo1", "direcctor1", Categoria.ACCION, Pg.MAYORES_12, UUID.randomUUID()));
-        peliculas.add(new Pelicula("titulo2", "direcctor2", Categoria.COMEDIA, Pg.MAYORES_16, UUID.randomUUID()));
-        peliculas.add(new Pelicula("titulo3", "direcctor3", Categoria.DRAMA, Pg.MAYORES_18, UUID.randomUUID()));
-        peliculas.add(new Pelicula("titulo4", "direcctor4", Categoria.ROMANCE, Pg.TODO_PUBLICO, UUID.randomUUID()));
-        peliculas.add(new Pelicula("titulo5", "direcctor5", Categoria.SUSPENSO, Pg.MAYORES_12, UUID.randomUUID()));
+        String p1,p2,p3,p4,p5;
+        p1 = "/imagenes/harrypotter.png";
+        p2 = "/imagenes/shrek.png";
+        p3 = "/imagenes/vendetta.png";
+        p4 = "/imagenes/starwars.png";
+        p5 = "/imagenes/lotr.png";
+        peliculas.add(new Pelicula("El Señor de los Anillos", "Peter Jackson", Categoria.ACCION, Pg.MAYORES_16, UUID.randomUUID(),p5));
+        peliculas.add(new Pelicula("Shrek", "Andrew Adamson, Vicky Jenson", Categoria.COMEDIA, Pg.TODO_PUBLICO, UUID.randomUUID(), p2));
+        peliculas.add(new Pelicula("V de Vendetta", "James McTeigue", Categoria.SUSPENSO, Pg.MAYORES_18, UUID.randomUUID(), p3));
+        peliculas.add(new Pelicula("La Guerra de las Galaxias", "George Lucas", Categoria.ACCION, Pg.MAYORES_12, UUID.randomUUID(),p4));
+        peliculas.add(new Pelicula("Harry Potter y la Piedra Filosofal", "Chris Columbus", Categoria.DRAMA, Pg.TODO_PUBLICO, UUID.randomUUID(),p1));
     }
 
     public boolean guardarPeliculas() throws IOException {

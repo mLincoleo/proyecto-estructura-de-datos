@@ -1,9 +1,231 @@
 [ {
-  "titulo" : "titulo1",
-  "director" : "direcctor1",
+  "titulo" : "El Señor de los Anillos: La Comunidad del Anillo",
+  "director" : "Peter Jackson",
+  "categoria" : "ACCION",
+  "pg" : "MAYORES_16",
+  "id" : "1656f7c6-4f58-4965-9a78-99d4d8074e7d",
+  "sala" : {
+    "asientos" : {
+      "root" : {
+        "id" : 1,
+        "bd" : true,
+        "leftChild" : null,
+        "rightChild" : {
+          "id" : 2,
+          "bd" : true,
+          "leftChild" : null,
+          "rightChild" : {
+            "id" : 3,
+            "bd" : true,
+            "leftChild" : null,
+            "rightChild" : {
+              "id" : 4,
+              "bd" : true,
+              "leftChild" : null,
+              "rightChild" : {
+                "id" : 5,
+                "bd" : true,
+                "leftChild" : null,
+                "rightChild" : {
+                  "id" : 6,
+                  "bd" : true,
+                  "leftChild" : null,
+                  "rightChild" : {
+                    "id" : 7,
+                    "bd" : true,
+                    "leftChild" : null,
+                    "rightChild" : {
+                      "id" : 8,
+                      "bd" : true,
+                      "leftChild" : null,
+                      "rightChild" : {
+                        "id" : 9,
+                        "bd" : true,
+                        "leftChild" : null,
+                        "rightChild" : {
+                          "id" : 10,
+                          "bd" : true,
+                          "leftChild" : null,
+                          "rightChild" : {
+                            "id" : 11,
+                            "bd" : true,
+                            "leftChild" : null,
+                            "rightChild" : {
+                              "id" : 12,
+                              "bd" : true,
+                              "leftChild" : null,
+                              "rightChild" : null
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "butaca" : 1,
+    "pelicula" : null
+  },
+  "foto" : "/imagenes/lotr.png"
+}, {
+  "titulo" : "Shrek",
+  "director" : "Andrew Adamson, Vicky Jenson",
+  "categoria" : "COMEDIA",
+  "pg" : "TODO_PUBLICO",
+  "id" : "a522ec32-e6e9-4ecb-9e2a-c776e54bfa95",
+  "sala" : {
+    "asientos" : {
+      "root" : {
+        "id" : 1,
+        "bd" : true,
+        "leftChild" : null,
+        "rightChild" : {
+          "id" : 2,
+          "bd" : true,
+          "leftChild" : null,
+          "rightChild" : {
+            "id" : 3,
+            "bd" : true,
+            "leftChild" : null,
+            "rightChild" : {
+              "id" : 4,
+              "bd" : true,
+              "leftChild" : null,
+              "rightChild" : {
+                "id" : 5,
+                "bd" : true,
+                "leftChild" : null,
+                "rightChild" : {
+                  "id" : 6,
+                  "bd" : true,
+                  "leftChild" : null,
+                  "rightChild" : {
+                    "id" : 7,
+                    "bd" : true,
+                    "leftChild" : null,
+                    "rightChild" : {
+                      "id" : 8,
+                      "bd" : true,
+                      "leftChild" : null,
+                      "rightChild" : {
+                        "id" : 9,
+                        "bd" : true,
+                        "leftChild" : null,
+                        "rightChild" : {
+                          "id" : 10,
+                          "bd" : true,
+                          "leftChild" : null,
+                          "rightChild" : {
+                            "id" : 11,
+                            "bd" : true,
+                            "leftChild" : null,
+                            "rightChild" : {
+                              "id" : 12,
+                              "bd" : true,
+                              "leftChild" : null,
+                              "rightChild" : null
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "butaca" : 1,
+    "pelicula" : null
+  },
+  "foto" : "/imagenes/shrek.png"
+}, {
+  "titulo" : "V de Vendetta",
+  "director" : "James McTeigue",
+  "categoria" : "SUSPENSO",
+  "pg" : "MAYORES_18",
+  "id" : "82fabf16-5646-4e00-9066-7c985841f172",
+  "sala" : {
+    "asientos" : {
+      "root" : {
+        "id" : 1,
+        "bd" : true,
+        "leftChild" : null,
+        "rightChild" : {
+          "id" : 2,
+          "bd" : true,
+          "leftChild" : null,
+          "rightChild" : {
+            "id" : 3,
+            "bd" : true,
+            "leftChild" : null,
+            "rightChild" : {
+              "id" : 4,
+              "bd" : true,
+              "leftChild" : null,
+              "rightChild" : {
+                "id" : 5,
+                "bd" : true,
+                "leftChild" : null,
+                "rightChild" : {
+                  "id" : 6,
+                  "bd" : true,
+                  "leftChild" : null,
+                  "rightChild" : {
+                    "id" : 7,
+                    "bd" : true,
+                    "leftChild" : null,
+                    "rightChild" : {
+                      "id" : 8,
+                      "bd" : true,
+                      "leftChild" : null,
+                      "rightChild" : {
+                        "id" : 9,
+                        "bd" : true,
+                        "leftChild" : null,
+                        "rightChild" : {
+                          "id" : 10,
+                          "bd" : true,
+                          "leftChild" : null,
+                          "rightChild" : {
+                            "id" : 11,
+                            "bd" : true,
+                            "leftChild" : null,
+                            "rightChild" : {
+                              "id" : 12,
+                              "bd" : true,
+                              "leftChild" : null,
+                              "rightChild" : null
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "butaca" : 1,
+    "pelicula" : null
+  },
+  "foto" : "/imagenes/vendetta.png"
+}, {
+  "titulo" : "La Guerra de las Galaxias",
+  "director" : "George Lucas",
   "categoria" : "ACCION",
   "pg" : "MAYORES_12",
-  "id" : "9bc2ecc4-c8c4-4c8b-95bb-75d2e3bdcd6a",
+  "id" : "60f53a0c-8a28-45e9-bd8a-4682e90135d7",
   "sala" : {
     "asientos" : {
       "root" : {
@@ -71,161 +293,13 @@
     "butaca" : 1,
     "pelicula" : null
   },
-  "foto" : null
+  "foto" : "/imagenes/starwars.png"
 }, {
-  "titulo" : "titulo2",
-  "director" : "direcctor2",
-  "categoria" : "COMEDIA",
-  "pg" : "MAYORES_16",
-  "id" : "6680cd76-7594-4472-9f92-3ea25b5c2320",
-  "sala" : {
-    "asientos" : {
-      "root" : {
-        "id" : 1,
-        "bd" : true,
-        "leftChild" : null,
-        "rightChild" : {
-          "id" : 2,
-          "bd" : true,
-          "leftChild" : null,
-          "rightChild" : {
-            "id" : 3,
-            "bd" : true,
-            "leftChild" : null,
-            "rightChild" : {
-              "id" : 4,
-              "bd" : true,
-              "leftChild" : null,
-              "rightChild" : {
-                "id" : 5,
-                "bd" : true,
-                "leftChild" : null,
-                "rightChild" : {
-                  "id" : 6,
-                  "bd" : true,
-                  "leftChild" : null,
-                  "rightChild" : {
-                    "id" : 7,
-                    "bd" : true,
-                    "leftChild" : null,
-                    "rightChild" : {
-                      "id" : 8,
-                      "bd" : true,
-                      "leftChild" : null,
-                      "rightChild" : {
-                        "id" : 9,
-                        "bd" : true,
-                        "leftChild" : null,
-                        "rightChild" : {
-                          "id" : 10,
-                          "bd" : true,
-                          "leftChild" : null,
-                          "rightChild" : {
-                            "id" : 11,
-                            "bd" : true,
-                            "leftChild" : null,
-                            "rightChild" : {
-                              "id" : 12,
-                              "bd" : true,
-                              "leftChild" : null,
-                              "rightChild" : null
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "butaca" : 1,
-    "pelicula" : null
-  },
-  "foto" : null
-}, {
-  "titulo" : "titulo3",
-  "director" : "direcctor3",
+  "titulo" : "Harry Potter y la Piedra Filosofal",
+  "director" : "Chris Columbus",
   "categoria" : "DRAMA",
-  "pg" : "MAYORES_18",
-  "id" : "77184d44-25e3-4dbd-9ea7-63a0fb5deb62",
-  "sala" : {
-    "asientos" : {
-      "root" : {
-        "id" : 1,
-        "bd" : true,
-        "leftChild" : null,
-        "rightChild" : {
-          "id" : 2,
-          "bd" : true,
-          "leftChild" : null,
-          "rightChild" : {
-            "id" : 3,
-            "bd" : true,
-            "leftChild" : null,
-            "rightChild" : {
-              "id" : 4,
-              "bd" : true,
-              "leftChild" : null,
-              "rightChild" : {
-                "id" : 5,
-                "bd" : true,
-                "leftChild" : null,
-                "rightChild" : {
-                  "id" : 6,
-                  "bd" : true,
-                  "leftChild" : null,
-                  "rightChild" : {
-                    "id" : 7,
-                    "bd" : true,
-                    "leftChild" : null,
-                    "rightChild" : {
-                      "id" : 8,
-                      "bd" : true,
-                      "leftChild" : null,
-                      "rightChild" : {
-                        "id" : 9,
-                        "bd" : true,
-                        "leftChild" : null,
-                        "rightChild" : {
-                          "id" : 10,
-                          "bd" : true,
-                          "leftChild" : null,
-                          "rightChild" : {
-                            "id" : 11,
-                            "bd" : true,
-                            "leftChild" : null,
-                            "rightChild" : {
-                              "id" : 12,
-                              "bd" : true,
-                              "leftChild" : null,
-                              "rightChild" : null
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "butaca" : 1,
-    "pelicula" : null
-  },
-  "foto" : null
-}, {
-  "titulo" : "titulo4",
-  "director" : "direcctor4",
-  "categoria" : "ROMANCE",
   "pg" : "TODO_PUBLICO",
-  "id" : "e71d3aca-b157-415d-a332-a0d2f5a9fe6a",
+  "id" : "7c5c4391-469a-45b3-932b-5b476009e1c8",
   "sala" : {
     "asientos" : {
       "root" : {
@@ -293,79 +367,5 @@
     "butaca" : 1,
     "pelicula" : null
   },
-  "foto" : null
-}, {
-  "titulo" : "titulo5",
-  "director" : "direcctor5",
-  "categoria" : "SUSPENSO",
-  "pg" : "MAYORES_12",
-  "id" : "ebdf1a18-0bbc-4be4-a90f-cf6dee5c69c9",
-  "sala" : {
-    "asientos" : {
-      "root" : {
-        "id" : 1,
-        "bd" : true,
-        "leftChild" : null,
-        "rightChild" : {
-          "id" : 2,
-          "bd" : true,
-          "leftChild" : null,
-          "rightChild" : {
-            "id" : 3,
-            "bd" : true,
-            "leftChild" : null,
-            "rightChild" : {
-              "id" : 4,
-              "bd" : true,
-              "leftChild" : null,
-              "rightChild" : {
-                "id" : 5,
-                "bd" : true,
-                "leftChild" : null,
-                "rightChild" : {
-                  "id" : 6,
-                  "bd" : true,
-                  "leftChild" : null,
-                  "rightChild" : {
-                    "id" : 7,
-                    "bd" : true,
-                    "leftChild" : null,
-                    "rightChild" : {
-                      "id" : 8,
-                      "bd" : true,
-                      "leftChild" : null,
-                      "rightChild" : {
-                        "id" : 9,
-                        "bd" : true,
-                        "leftChild" : null,
-                        "rightChild" : {
-                          "id" : 10,
-                          "bd" : true,
-                          "leftChild" : null,
-                          "rightChild" : {
-                            "id" : 11,
-                            "bd" : true,
-                            "leftChild" : null,
-                            "rightChild" : {
-                              "id" : 12,
-                              "bd" : true,
-                              "leftChild" : null,
-                              "rightChild" : null
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "butaca" : 1,
-    "pelicula" : null
-  },
-  "foto" : null
+  "foto" : "/imagenes/harrypotter.png"
 } ]

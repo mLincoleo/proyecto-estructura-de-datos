@@ -42,6 +42,29 @@ public class Catalogo extends javax.swing.JFrame {
         jTextDirector.setText(peliculas.get(actual).getDirector());
         jTextCategoria.setText(peliculas.get(actual).getCategoria());
         jTextPg.setText(peliculas.get(actual).getPg());
+        jLabelMarco.setIcon(new javax.swing.ImageIcon(getClass().getResource(peliculas.get(actual).getFoto())));
+        
+    }
+    
+    public Catalogo(int index) throws IOException {
+        actual = index;
+        initComponents();
+        jTextTitulo.setEditable(false);
+        jTextDirector.setEditable(false);
+        jTextCategoria.setEditable(false);
+        jTextPg.setEditable(false);
+        this.setLocationRelativeTo(null);
+        
+        GestorPeliculas gp = new GestorPeliculas();
+        peliculas = gp.obtenerPeliculas();
+        
+        this.tamaño=peliculas.size();
+        
+        jTextTitulo.setText(peliculas.get(actual).getTitulo());
+        jTextDirector.setText(peliculas.get(actual).getDirector());
+        jTextCategoria.setText(peliculas.get(actual).getCategoria());
+        jTextPg.setText(peliculas.get(actual).getPg());
+        jLabelMarco.setIcon(new javax.swing.ImageIcon(getClass().getResource(peliculas.get(actual).getFoto())));
         
     }
 
@@ -100,7 +123,7 @@ public class Catalogo extends javax.swing.JFrame {
                 jTextDirectorActionPerformed(evt);
             }
         });
-        getContentPane().add(jTextDirector, new org.netbeans.lib.awtextra.AbsoluteConstraints(469, 90, 210, -1));
+        getContentPane().add(jTextDirector, new org.netbeans.lib.awtextra.AbsoluteConstraints(439, 90, 270, -1));
 
         jTextCategoria.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jTextCategoria.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -172,6 +195,7 @@ public class Catalogo extends javax.swing.JFrame {
         jTextDirector.setText(peliculas.get(actual).getDirector());
         jTextCategoria.setText(peliculas.get(actual).getCategoria());
         jTextPg.setText(peliculas.get(actual).getPg());
+        jLabelMarco.setIcon(new javax.swing.ImageIcon(getClass().getResource(peliculas.get(actual).getFoto())));
     }//GEN-LAST:event_jButtonDerActionPerformed
 
     private void jButtonIzqActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonIzqActionPerformed
@@ -182,6 +206,7 @@ public class Catalogo extends javax.swing.JFrame {
         jTextDirector.setText(peliculas.get(actual).getDirector());
         jTextCategoria.setText(peliculas.get(actual).getCategoria());
         jTextPg.setText(peliculas.get(actual).getPg());
+        jLabelMarco.setIcon(new javax.swing.ImageIcon(getClass().getResource(peliculas.get(actual).getFoto())));
     }//GEN-LAST:event_jButtonIzqActionPerformed
 
     private void jTextTituloActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextTituloActionPerformed
@@ -204,7 +229,7 @@ public class Catalogo extends javax.swing.JFrame {
         Pelicula seleccion = peliculas.get(actual);
         try {
             this.setVisible(false);
-            SalaCine sc = new SalaCine(seleccion);
+            SalaCine sc = new SalaCine(seleccion, actual);
             sc.setVisible(true);
         } catch (IOException ex) {
             Logger.getLogger(principal.class.getName()).log(Level.SEVERE, null, ex);
