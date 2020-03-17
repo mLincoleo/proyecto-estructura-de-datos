@@ -35,7 +35,8 @@ public class Formulario extends javax.swing.JFrame {
             jTextField1.setEditable(false);
             this.setLocationRelativeTo(null);
             gp = new GestorPeliculas();
-            peliculas = gp.obtenerPeliculas();       
+            peliculas = gp.obtenerPeliculas();
+            index=peliculas.indexOf(pelicula);
     }
 
     /**
@@ -132,6 +133,7 @@ public class Formulario extends javax.swing.JFrame {
         try {   
                 peli.getSala().getAsientos().ocupar(butaca);
                 this.setVisible(false);
+                peliculas.set(index, peli);
                 gp.setPeliculas(peliculas);
                 gp.guardarPeliculas();
                 SalaCine sc = new SalaCine(peli);

@@ -3,7 +3,7 @@
   "director" : "direcctor1",
   "categoria" : "ACCION",
   "pg" : "MAYORES_12",
-  "id" : "6421143d-44aa-4f30-aaee-53254e6d3a97",
+  "id" : "9bc2ecc4-c8c4-4c8b-95bb-75d2e3bdcd6a",
   "sala" : {
     "asientos" : {
       "root" : {
@@ -77,7 +77,7 @@
   "director" : "direcctor2",
   "categoria" : "COMEDIA",
   "pg" : "MAYORES_16",
-  "id" : "ba66bd0b-bb14-4a3a-90d6-92767742bd68",
+  "id" : "6680cd76-7594-4472-9f92-3ea25b5c2320",
   "sala" : {
     "asientos" : {
       "root" : {
@@ -151,7 +151,7 @@
   "director" : "direcctor3",
   "categoria" : "DRAMA",
   "pg" : "MAYORES_18",
-  "id" : "8a845a87-e381-4f84-a82e-419ca8289a8e",
+  "id" : "77184d44-25e3-4dbd-9ea7-63a0fb5deb62",
   "sala" : {
     "asientos" : {
       "root" : {
@@ -225,7 +225,7 @@
   "director" : "direcctor4",
   "categoria" : "ROMANCE",
   "pg" : "TODO_PUBLICO",
-  "id" : "4cd96cdd-26dd-4272-86cc-cd47e08530d2",
+  "id" : "e71d3aca-b157-415d-a332-a0d2f5a9fe6a",
   "sala" : {
     "asientos" : {
       "root" : {
@@ -299,7 +299,7 @@
   "director" : "direcctor5",
   "categoria" : "SUSPENSO",
   "pg" : "MAYORES_12",
-  "id" : "406d9484-0a80-4ca2-80c9-2ff2e300e640",
+  "id" : "ebdf1a18-0bbc-4be4-a90f-cf6dee5c69c9",
   "sala" : {
     "asientos" : {
       "root" : {
