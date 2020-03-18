@@ -24,7 +24,6 @@ public class GestorSalas {
         objectMapper = new ObjectMapper();
         try {
             objectMapper.readValue(new File(rutaPeliculas), Sala[].class);
-            System.out.println("PELICULAS ENCONTRADAS");
         } catch (FileNotFoundException ex) {
             System.out.println("CREANDO PELICULAS");
             initialSetup();

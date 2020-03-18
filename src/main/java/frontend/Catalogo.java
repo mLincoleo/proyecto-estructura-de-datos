@@ -35,7 +35,6 @@ public class Catalogo extends javax.swing.JFrame {
             peliculas.add(salasDeCine.get(i).getPelicula());
         }
         initComponents();
-        System.out.println("INICIO COMPONENTES");
         
         jTextTitulo.setEditable(false);
         jTextDirector.setEditable(false);
@@ -59,7 +58,6 @@ public class Catalogo extends javax.swing.JFrame {
         actual = index;
         this.cine = new Cine();
         List<Sala> salasDeCine = cine.getSalas();
-        System.out.println("SALAS DE CINE: " + salasDeCine.size());
         this.peliculas = new ArrayList<>();
         for (int i = 0; i < salasDeCine.size(); i++) {
             peliculas.add(salasDeCine.get(i).getPelicula());

@@ -22,7 +22,7 @@
               "leftChild" : null,
               "rightChild" : {
                 "id" : 6,
-                "bd" : true,
+                "bd" : false,
                 "leftChild" : null,
                 "rightChild" : {
                   "id" : 7,

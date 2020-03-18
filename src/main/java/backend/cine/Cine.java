@@ -16,7 +16,6 @@ public class Cine {
     public Cine() throws IOException{
         gestorSalas = new GestorSalas();
         this.salasCine = gestorSalas.obtenerSalas();
-        System.out.println(this.salasCine.get(0).getAsientos().find(11));;
     }
     
     public List<Sala> getSalas(){
