@@ -1,0 +1,366 @@
+[ {
+  "asientos" : {
+    "root" : {
+      "id" : 1,
+      "bd" : true,
+      "leftChild" : null,
+      "rightChild" : {
+        "id" : 2,
+        "bd" : true,
+        "leftChild" : null,
+        "rightChild" : {
+          "id" : 3,
+          "bd" : true,
+          "leftChild" : null,
+          "rightChild" : {
+            "id" : 4,
+            "bd" : true,
+            "leftChild" : null,
+            "rightChild" : {
+              "id" : 5,
+              "bd" : true,
+              "leftChild" : null,
+              "rightChild" : {
+                "id" : 6,
+                "bd" : true,
+                "leftChild" : null,
+                "rightChild" : {
+                  "id" : 7,
+                  "bd" : true,
+                  "leftChild" : null,
+                  "rightChild" : {
+                    "id" : 8,
+                    "bd" : true,
+                    "leftChild" : null,
+                    "rightChild" : {
+                      "id" : 9,
+                      "bd" : true,
+                      "leftChild" : null,
+                      "rightChild" : {
+                        "id" : 10,
+                        "bd" : false,
+                        "leftChild" : null,
+                        "rightChild" : {
+                          "id" : 11,
+                          "bd" : false,
+                          "leftChild" : null,
+                          "rightChild" : {
+                            "id" : 12,
+                            "bd" : true,
+                            "leftChild" : null,
+                            "rightChild" : null
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "butaca" : 1,
+  "pelicula" : {
+    "titulo" : "El Señor de los Anillos",
+    "director" : "Peter Jackson",
+    "categoria" : "ACCION",
+    "pg" : "MAYORES_16",
+    "id" : "ffd16c0e-a9e5-489d-82b3-b5dae6809066",
+    "foto" : "/imagenes/lotr.png"
+  }
+}, {
+  "asientos" : {
+    "root" : {
+      "id" : 1,
+      "bd" : true,
+      "leftChild" : null,
+      "rightChild" : {
+        "id" : 2,
+        "bd" : true,
+        "leftChild" : null,
+        "rightChild" : {
+          "id" : 3,
+          "bd" : true,
+          "leftChild" : null,
+          "rightChild" : {
+            "id" : 4,
+            "bd" : true,
+            "leftChild" : null,
+            "rightChild" : {
+              "id" : 5,
+              "bd" : true,
+              "leftChild" : null,
+              "rightChild" : {
+                "id" : 6,
+                "bd" : false,
+                "leftChild" : null,
+                "rightChild" : {
+                  "id" : 7,
+                  "bd" : false,
+                  "leftChild" : null,
+                  "rightChild" : {
+                    "id" : 8,
+                    "bd" : true,
+                    "leftChild" : null,
+                    "rightChild" : {
+                      "id" : 9,
+                      "bd" : true,
+                      "leftChild" : null,
+                      "rightChild" : {
+                        "id" : 10,
+                        "bd" : true,
+                        "leftChild" : null,
+                        "rightChild" : {
+                          "id" : 11,
+                          "bd" : true,
+                          "leftChild" : null,
+                          "rightChild" : {
+                            "id" : 12,
+                            "bd" : true,
+                            "leftChild" : null,
+                            "rightChild" : null
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "butaca" : 1,
+  "pelicula" : {
+    "titulo" : "Shrek",
+    "director" : "Andrew Adamson, Vicky Jenson",
+    "categoria" : "COMEDIA",
+    "pg" : "TODO_PUBLICO",
+    "id" : "c0374428-a1c1-49d4-8a20-d4c44a461f4b",
+    "foto" : "/imagenes/shrek.png"
+  }
+}, {
+  "asientos" : {
+    "root" : {
+      "id" : 1,
+      "bd" : true,
+      "leftChild" : null,
+      "rightChild" : {
+        "id" : 2,
+        "bd" : false,
+        "leftChild" : null,
+        "rightChild" : {
+          "id" : 3,
+          "bd" : false,
+          "leftChild" : null,
+          "rightChild" : {
+            "id" : 4,
+            "bd" : true,
+            "leftChild" : null,
+            "rightChild" : {
+              "id" : 5,
+              "bd" : true,
+              "leftChild" : null,
+              "rightChild" : {
+                "id" : 6,
+                "bd" : true,
+                "leftChild" : null,
+                "rightChild" : {
+                  "id" : 7,
+                  "bd" : true,
+                  "leftChild" : null,
+                  "rightChild" : {
+                    "id" : 8,
+                    "bd" : true,
+                    "leftChild" : null,
+                    "rightChild" : {
+                      "id" : 9,
+                      "bd" : true,
+                      "leftChild" : null,
+                      "rightChild" : {
+                        "id" : 10,
+                        "bd" : true,
+                        "leftChild" : null,
+                        "rightChild" : {
+                          "id" : 11,
+                          "bd" : true,
+                          "leftChild" : null,
+                          "rightChild" : {
+                            "id" : 12,
+                            "bd" : true,
+                            "leftChild" : null,
+                            "rightChild" : null
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "butaca" : 1,
+  "pelicula" : {
+    "titulo" : "V de Vendetta",
+    "director" : "James McTeigue",
+    "categoria" : "SUSPENSO",
+    "pg" : "MAYORES_18",
+    "id" : "b822ee7d-9518-4199-be99-2e978e80c41f",
+    "foto" : "/imagenes/vendetta.png"
+  }
+}, {
+  "asientos" : {
+    "root" : {
+      "id" : 1,
+      "bd" : true,
+      "leftChild" : null,
+      "rightChild" : {
+        "id" : 2,
+        "bd" : true,
+        "leftChild" : null,
+        "rightChild" : {
+          "id" : 3,
+          "bd" : true,
+          "leftChild" : null,
+          "rightChild" : {
+            "id" : 4,
+            "bd" : true,
+            "leftChild" : null,
+            "rightChild" : {
+              "id" : 5,
+              "bd" : true,
+              "leftChild" : null,
+              "rightChild" : {
+                "id" : 6,
+                "bd" : true,
+                "leftChild" : null,
+                "rightChild" : {
+                  "id" : 7,
+                  "bd" : true,
+                  "leftChild" : null,
+                  "rightChild" : {
+                    "id" : 8,
+                    "bd" : true,
+                    "leftChild" : null,
+                    "rightChild" : {
+                      "id" : 9,
+                      "bd" : true,
+                      "leftChild" : null,
+                      "rightChild" : {
+                        "id" : 10,
+                        "bd" : true,
+                        "leftChild" : null,
+                        "rightChild" : {
+                          "id" : 11,
+                          "bd" : true,
+                          "leftChild" : null,
+                          "rightChild" : {
+                            "id" : 12,
+                            "bd" : true,
+                            "leftChild" : null,
+                            "rightChild" : null
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "butaca" : 1,
+  "pelicula" : {
+    "titulo" : "La Guerra de las Galaxias",
+    "director" : "George Lucas",
+    "categoria" : "ACCION",
+    "pg" : "MAYORES_12",
+    "id" : "cc08e9d6-f235-4c7a-a8e0-c4082aac4e99",
+    "foto" : "/imagenes/starwars.png"
+  }
+}, {
+  "asientos" : {
+    "root" : {
+      "id" : 1,
+      "bd" : true,
+      "leftChild" : null,
+      "rightChild" : {
+        "id" : 2,
+        "bd" : true,
+        "leftChild" : null,
+        "rightChild" : {
+          "id" : 3,
+          "bd" : true,
+          "leftChild" : null,
+          "rightChild" : {
+            "id" : 4,
+            "bd" : true,
+            "leftChild" : null,
+            "rightChild" : {
+              "id" : 5,
+              "bd" : true,
+              "leftChild" : null,
+              "rightChild" : {
+                "id" : 6,
+                "bd" : true,
+                "leftChild" : null,
+                "rightChild" : {
+                  "id" : 7,
+                  "bd" : true,
+                  "leftChild" : null,
+                  "rightChild" : {
+                    "id" : 8,
+                    "bd" : true,
+                    "leftChild" : null,
+                    "rightChild" : {
+                      "id" : 9,
+                      "bd" : true,
+                      "leftChild" : null,
+                      "rightChild" : {
+                        "id" : 10,
+                        "bd" : true,
+                        "leftChild" : null,
+                        "rightChild" : {
+                          "id" : 11,
+                          "bd" : true,
+                          "leftChild" : null,
+                          "rightChild" : {
+                            "id" : 12,
+                            "bd" : true,
+                            "leftChild" : null,
+                            "rightChild" : null
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "butaca" : 1,
+  "pelicula" : {
+    "titulo" : "Harry Potter y la Piedra Filosofal",
+    "director" : "Chris Columbus",
+    "categoria" : "DRAMA",
+    "pg" : "TODO_PUBLICO",
+    "id" : "23d73767-eea8-405e-a494-99e123e56b3c",
+    "foto" : "/imagenes/harrypotter.png"
+  }
+} ]
